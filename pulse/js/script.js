@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('.carousel__inner').slick({
         adaptiveHeight: true,
         autoplay: false,
+        draggable: true,
+        touchMove: true,
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
         responsive: [
@@ -10,7 +12,8 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     dots: true,
-                    dotsClass: 'carousel__dots' 
+                    dotsClass: 'carousel__dots',
+                    infinite: true,
                  }
             }
         ]
